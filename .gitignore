@@ -1,0 +1,10 @@
+# Ignore everything
+*
+
+# Except these files/folders
+!.gitignore
+!*.sln
+!*.csproj
+!*.cs
+!*.meta
+!/Assets/

@@ -1,0 +1,1030 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6F6E0B56-20BB-BE89-EB55-108B2CE90178}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectGenerator>VSTU</UnityProjectGenerator>
+    <UnityProjectType>GamePlugins:3</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
+    <UnityVersion>2017.3.1f1</UnityVersion>
+    <RootNamespace></RootNamespace>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_3_1;UNITY_2017_3;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;COM_DEBUG;USE_ASSET_ALL;MIKU_GAME;IS_UNITYEDITOR_ANIMATIONS_AVAILABLE;IS_CANDLELIGHT_HYPERTEXT_AVAILABLE;CROSS_PLATFORM_INPUT;</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_3_1;UNITY_2017_3;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;COM_DEBUG;USE_ASSET_ALL;MIKU_GAME;IS_UNITYEDITOR_ANIMATIONS_AVAILABLE;IS_CANDLELIGHT_HYPERTEXT_AVAILABLE;CROSS_PLATFORM_INPUT;</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEditor">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WebModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.WebModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StyleSheetsModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticlesLegacyModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.ParticlesLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Networking">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceTesting">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/UnityExtensions/Unity/PerformanceTesting/UnityEngine.PerformanceTesting.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TestRunner">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Timeline">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Timeline">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TreeEditor">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIAutomation">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIAutomation">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/UnityExtensions/Unity/UIAutomation/Editor/UnityEditor.UIAutomation.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.GoogleAudioSpatializer">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GoogleAudioSpatializer">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.HoloLens">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SpatialTracking">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.VR">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>E:/WorkSoftware/Unity2017.3.1f1/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
+      <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>Assets/MikuAdditive/ThirdPlugins/DOTween/DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween43">
+      <HintPath>Assets/MikuAdditive/ThirdPlugins/DOTween/DOTween43.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween46">
+      <HintPath>Assets/MikuAdditive/ThirdPlugins/DOTween/DOTween46.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween50">
+      <HintPath>Assets/MikuAdditive/ThirdPlugins/DOTween/DOTween50.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenEditor">
+      <HintPath>Assets/MikuAdditive/ThirdPlugins/DOTween/Editor/DOTweenEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Psd2UnityPro">
+      <HintPath>Assets/MikuGame/Editor/Psd2UnityPro/Editor/Plugins/Psd2UnityPro.dll</HintPath>
+    </Reference>
+    <Reference Include="ConsolePro.Editor">
+      <HintPath>Assets/MikuGame/Editor/Tools/ConsolePro/Editor/ConsolePro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Vuforia.UnityExtensions.Editor">
+      <HintPath>Assets/Vuforia/Editor/Scripts/Vuforia.UnityExtensions.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Vuforia.UnityExtensions">
+      <HintPath>Assets/Vuforia/Scripts/Internal/Vuforia.UnityExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>Assets/XIL/Scripts/ILHotfix/Editor/Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Mdb">
+      <HintPath>Assets/XIL/Scripts/ILHotfix/Editor/Mono.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Pdb">
+      <HintPath>Assets/XIL/Scripts/ILHotfix/Editor/Mono.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>C:/Users/zhaolei/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Advertisements">
+      <HintPath>C:/Users/zhaolei/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/Editor/UnityEditor.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>C:/Users/zhaolei/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Analytics">
+      <HintPath>C:/Users/zhaolei/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/Editor/UnityEditor.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>C:/Users/zhaolei/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Purchasing">
+      <HintPath>C:/Users/zhaolei/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/Editor/UnityEditor.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StandardEvents">
+      <HintPath>C:/Users/zhaolei/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Plugins\Candlelight\Library\Animation\OrientationParameterTestData.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\GUI\FontUpdateTracker.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\GUI\GUIHelpers.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\GUI\HyperText.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\GUI\HyperTextProcessor.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\GUI\HyperTextQuad.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\GUI\HyperTextStyles.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\GUI\KeywordCollection.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\GUI\KeywordsGlossary.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\GUI\KeywordsTextDocument.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\GUI\LocalizableText.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\GUI\RectOffsetX.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\GUI\RichTextStyle.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\GUI\SimpleGradient.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\GUI\TextAnchorX.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\GUI\Typewriter.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\Interfaces\IIdentifiable.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\Interfaces\IPropertyBackingFieldCompatible.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\Interfaces\ITextSource.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\Interfaces\IValidatable.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\Property Attributes\FlushChildrenAttribute.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\Property Attributes\PopupAttribute.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\Property Attributes\PropertyBackingFieldAttribute.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\Property Attributes\StatusPropertyAttribute.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\Property Attributes\TextureThumbnailAttribute.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\Utilities\ArrayX.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\Utilities\BackingFieldCompatibleObject.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\Utilities\DictPool.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\Utilities\HashPool.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\Utilities\IdentifiableBackingFieldCompatibleObjectWrapper.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\Utilities\IndexRange.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\Utilities\ListPool.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\Utilities\ObjectPool.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\Utilities\ObjectX.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\Utilities\Singleton.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\Utilities\StringX.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\Utilities\UnityVersion.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\Visuals\ColorGradient.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\Visuals\ColorHSV.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\Visuals\ColorTween.cs" />
+    <Compile Include="Assets\Plugins\Candlelight\Library\Visuals\TextureX.cs" />
+    <Compile Include="Assets\Plugins\Common\ResourcesPath.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\Animation.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\AnimationState.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\AnimationStateData.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\Atlas.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\Attachments\AtlasAttachmentLoader.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\Attachments\Attachment.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\Attachments\AttachmentLoader.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\Attachments\AttachmentType.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\Attachments\BoundingBoxAttachment.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\Attachments\ClippingAttachment.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\Attachments\MeshAttachment.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\Attachments\PathAttachment.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\Attachments\PointAttachment.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\Attachments\RegionAttachment.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\Attachments\VertexAttachment.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\BlendMode.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\Bone.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\BoneData.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\Event.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\EventData.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\ExposedList.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\IConstraint.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\IkConstraint.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\IkConstraintData.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\IUpdatable.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\Json.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\MathUtils.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\PathConstraint.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\PathConstraintData.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\Skeleton.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\SkeletonBinary.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\SkeletonBounds.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\SkeletonClipping.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\SkeletonData.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\SkeletonJson.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\Skin.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\Slot.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\SlotData.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\TransformConstraint.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\TransformConstraintData.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\runtime\Triangulator.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\AssetTypes\AtlasAsset.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\AssetTypes\SkeletonDataAsset.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\BoneFollower.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\ISkeletonAnimation.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\MeshGeneration\DoubleBuffered.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\MeshGeneration\SpineMesh.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\MeshGeneration\Unused\ArraysMeshGenerator.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\MeshGeneration\Unused\ArraysSimpleMeshGenerator.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\MeshGeneration\Unused\ArraysSubmeshedMeshGenerator.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\MeshGeneration\Unused\ArraysSubmeshSetMeshGenerator.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\MeshGeneration\Unused\DoubleBufferedMesh.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\MeshGeneration\Unused\ISimpleMeshGenerator.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\MeshGeneration\Unused\ISubmeshedMeshGenerator.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\Modules\AttachmentTools\AttachmentTools.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\Modules\BoundingBoxFollower\BoundingBoxFollower.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\Modules\CustomMaterials\SkeletonRendererCustomMaterials.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\Modules\Ghost\SkeletonGhost.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\Modules\Ghost\SkeletonGhostRenderer.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\Modules\Ragdoll\SkeletonRagdoll.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\Modules\Ragdoll\SkeletonRagdoll2D.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\Modules\SkeletonGraphic\BoneFollowerGraphic.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\Modules\SkeletonGraphic\SkeletonGraphic.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\Modules\SkeletonRenderSeparator\SkeletonPartsRenderer.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\Modules\SkeletonRenderSeparator\SkeletonRenderSeparator.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\Modules\SkeletonUtilityModules\SkeletonUtilityEyeConstraint.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\Modules\SkeletonUtilityModules\SkeletonUtilityGroundConstraint.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\Modules\SkeletonUtilityModules\SkeletonUtilityKinematicShadow.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\Modules\SlotBlendModes\SlotBlendModes.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\Modules\TK2D\SpriteCollectionAttachmentLoader.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\Modules\YieldInstructions\WaitForSpineAnimationComplete.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\Modules\YieldInstructions\WaitForSpineEvent.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\Modules\YieldInstructions\WaitForSpineTrackEntryEnd.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\SkeletonAnimation.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\SkeletonAnimator.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\SkeletonExtensions.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\SkeletonRenderer.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\SkeletonUtility\SkeletonUtility.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\SkeletonUtility\SkeletonUtilityBone.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\SkeletonUtility\SkeletonUtilityConstraint.cs" />
+    <Compile Include="Assets\Plugins\Common\spine\scripts\SpineAttributes.cs" />
+    <Compile Include="Assets\Plugins\Common\Tweening\AnimatedAlpha.cs" />
+    <Compile Include="Assets\Plugins\Common\Tweening\AnimatedColor.cs" />
+    <Compile Include="Assets\Plugins\Common\Tweening\AnimatedWidget.cs" />
+    <Compile Include="Assets\Plugins\Common\Tweening\AnimationOrTween.cs" />
+    <Compile Include="Assets\Plugins\Common\Tweening\ButtonScale.cs" />
+    <Compile Include="Assets\Plugins\Common\Tweening\SizeScale.cs" />
+    <Compile Include="Assets\Plugins\Common\Tweening\TweenAlpha.cs" />
+    <Compile Include="Assets\Plugins\Common\Tweening\TweenColor.cs" />
+    <Compile Include="Assets\Plugins\Common\Tweening\TweenFill.cs" />
+    <Compile Include="Assets\Plugins\Common\Tweening\TweenHeight.cs" />
+    <Compile Include="Assets\Plugins\Common\Tweening\TweenPosition.cs" />
+    <Compile Include="Assets\Plugins\Common\Tweening\TweenRotation.cs" />
+    <Compile Include="Assets\Plugins\Common\Tweening\TweenScale.cs" />
+    <Compile Include="Assets\Plugins\Common\Tweening\TweenSizeScale.cs" />
+    <Compile Include="Assets\Plugins\Common\Tweening\TweenVolume.cs" />
+    <Compile Include="Assets\Plugins\Common\Tweening\TweenWidth.cs" />
+    <Compile Include="Assets\Plugins\Common\Tweening\UITweener.cs" />
+    <Compile Include="Assets\Plugins\CubeApmAgent.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Checksum\Adler32.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Checksum\BZip2Crc.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Checksum\Crc32.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Checksum\IChecksum.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Core\FileSystemScanner.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Core\INameTransform.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Core\IScanFilter.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Core\NameFilter.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Core\PathFilter.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Core\StreamUtils.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Core\WindowsPathUtils.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Encryption\PkzipClassic.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Encryption\ZipAESStream.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Encryption\ZipAESTransform.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\GZip\GZip.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\GZip\GZipConstants.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\GZip\GZipException.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\GZip\GzipInputStream.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\GZip\GzipOutputStream.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\SharpZipBaseException.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Zip\Compression\Deflater.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Zip\Compression\DeflaterConstants.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Zip\Compression\DeflaterEngine.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Zip\Compression\DeflaterHuffman.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Zip\Compression\DeflaterPending.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Zip\Compression\Inflater.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Zip\Compression\InflaterDynHeader.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Zip\Compression\InflaterHuffmanTree.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Zip\Compression\PendingBuffer.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Zip\Compression\Streams\DeflaterOutputStream.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Zip\Compression\Streams\InflaterInputStream.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Zip\Compression\Streams\OutputWindow.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Zip\Compression\Streams\StreamManipulator.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Zip\FastZip.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Zip\IEntryFactory.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Zip\WindowsNameTransform.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Zip\ZipConstants.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Zip\ZipEntry.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Zip\ZipEntryFactory.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Zip\ZipException.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Zip\ZipExtraData.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Zip\ZipFile.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Zip\ZipHelperStream.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Zip\ZipInputStream.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Zip\ZipNameTransform.cs" />
+    <Compile Include="Assets\Plugins\ICSharpCode.SharpZipLib\Zip\ZipOutputStream.cs" />
+    <Compile Include="Assets\Plugins\LogDelegate.cs" />
+    <Compile Include="Assets\Plugins\TeaEncrypt\CRC16.cs" />
+    <Compile Include="Assets\Plugins\TeaEncrypt\DecryptInputBuffer.cs" />
+    <Compile Include="Assets\Plugins\TeaEncrypt\EncryptInputBuffer.cs" />
+    <Compile Include="Assets\Plugins\TeaEncrypt\TeaEncrypt.cs" />
+    <Compile Include="Assets\Plugins\TeaEncrypt\TeaEncrypt16.cs" />
+    <Compile Include="Assets\Plugins\TeaEncrypt\TeaStream.cs" />
+    <Compile Include="Assets\Plugins\TssSdk.cs" />
+    <Compile Include="Assets\Plugins\TssSdt.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\MikuAdditive\MikuArtTech\Resources\Shaders\Benchmark\BlendForBloom.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Resources\Shaders\Benchmark\BlurAndFlares.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Resources\Shaders\Benchmark\BrightPassFilter2.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Resources\Shaders\Benchmark\LensFlareCreate.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Resources\Shaders\Benchmark\TexturedCover.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Resources\Shaders\MikuPostEffect.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Resources\Shaders\_Internal\GlowObjects.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Resources\Shaders\_Internal\MobileBlur.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Resources\Shaders\_Internal\ShadowDepthOnly.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Resources\Shaders\_Internal\ShadowProjector.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\CharCloth.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\CharClothFade.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\CharCommon.cginc" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\CharEye.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\CharHair.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\CharNose.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\CharSkin.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\CharSkinFade.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\Effect_shader\GlassWithoutGrabSpecular.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\Effect_shader\HeatDistort_WLJ.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\Effect_shader\Panner_Mask.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\Effect_shader\SeparableBlur.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\Effect_shader\Shader_Neon_Animated_Mobile.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\Effect_shader\my_dissolution_add.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\Effect_shader\my_vfx_Dsitort_base_add.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\Effect_shader\my_vfx_Dsitort_base_add_mask.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\Effect_shader\my_vfx_UVoffset_anim_add_mask.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\Effect_shader\xf_heat_distortion.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\Fx\2layersUV.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\Fx\DistortADD.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\Fx\Particle_Add.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\Fx\baoxiang_shader.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\Fx\box.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\Fx\fx_UIMainPanel.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\Fx\niudan.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\Fx\shui.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\Grass-Alpha.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\Illumin-Bumped-Rim.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\Include\StandardCommon.cginc" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\Include\StandardForward.cginc" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\Include\StandardMeta.cginc" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\Include\StandardShadow.cginc" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\Leaves.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\Misc\BackScreen.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\Misc\Scene_Diffuse_Illumin_Cutout.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\Misc\Unlit-ColoredAdd.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\ParticleAdd.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\ParticleAlphaBlend(NoFog).shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\ParticleAlphaBlend.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\PlanarRealtimeReflection.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\SSFS_v14\SSFSCG.cginc" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\SSFS_v14\SSFS_Full.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\Scene\OpaqueReflection.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\Standard(Legacy).shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\UI\BlurredImage.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\Unlit-Alpha-4RT.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\Unlit-Alpha-Texture-Rim-Glow.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\Unlit-Texture-NoFog.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\Unlit-Texture-Reflect-Rim.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\Unlit-Texture-Rim.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\XyjShaders\XyjCustom.cginc" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\Shaders\XyjShaders\XyjStandard.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\UGUIExpand\Resources\Shader\Grey\UI-Default-Grey-Soft-Mask.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\UGUIExpand\Resources\Shader\Grey\UI-Default-Grey.shader" />
+    <None Include="Assets\MikuAdditive\MikuArtTech\UGUIExpand\Resources\Shader\Grey\UI-Default-transparent-Grey.shader" />
+    <None Include="Assets\MikuAdditive\Res\Art\Fx\ReadMe.txt" />
+    <None Include="Assets\MikuAdditive\Res\Art\NewUI\CustomFont\hexinwanfa_huangzi\hexinwanfa_huangzi.fnt" />
+    <None Include="Assets\MikuAdditive\Res\Art\NewUI\CustomFont\hexinwanfa_scoreNumber\hexinwanfa_scoreNumber.fnt" />
+    <None Include="Assets\MikuAdditive\Res\Art\NewUI\Readme.txt" />
+    <None Include="Assets\MikuAdditive\Res\Art\Spine\Kaito_01\Kaito_01.atlas.txt" />
+    <None Include="Assets\MikuAdditive\Res\Art\Spine\Len_01\Len_01.atlas.txt" />
+    <None Include="Assets\MikuAdditive\Res\Art\Spine\Luka_01\Luka_01.atlas.txt" />
+    <None Include="Assets\MikuAdditive\Res\Art\Spine\Meiko_01\Meiko_01.atlas.txt" />
+    <None Include="Assets\MikuAdditive\Res\Art\Spine\Rin_01\Rin_01.atlas.txt" />
+    <None Include="Assets\MikuAdditive\Res\Art\Spine\miku_01\Miku_01.atlas.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_1000_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_1001_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_1002_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_1003_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_1004_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_1005_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_1006_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_1007_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_1008_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_1009_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_1010_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_1011_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_1012_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_1013_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_1014_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_1015_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_1016_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_1017_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_1018_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_1019_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_1020_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_1021_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_1022_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_1023_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_1024_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_1025_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_1026_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_1027_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_110_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_111_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_151_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_154_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_155_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_156_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_157_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_159_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_162_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_163_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_166_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_167_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_168_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_169_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_170_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_171_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_172_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_173_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_175_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_176_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_177_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_179_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_180_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_181_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_182_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_183_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_185_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_186_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_187_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_188_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_189_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_191_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_192_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_193_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_195_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_196_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_197_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_198_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_199_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_200_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_201_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_202_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_203_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_204_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_205_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_206_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_209_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_210_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_214_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_215_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_216_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_217_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_218_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_219_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_220_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_221_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_222_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_223_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_224_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_226_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_228_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_234_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_235_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_236_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_238_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_242_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_248_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_254_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_3110_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_3111_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_3151_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_3154_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_3156_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_3157_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_3159_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_3162_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_3163_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_3166_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_3168_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_3172_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_3173_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_3180_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_3198_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_3201_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_3202_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_3203_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_3205_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_3206_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_3214_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_3215_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_3217_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_3226_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_4999_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_5000_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_5001_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_5002_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_5003_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_5004_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_5110_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_5111_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_5151_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_5154_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_5156_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_5157_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_5159_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_5162_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_5163_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_5166_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_5168_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_5172_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_5173_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_5180_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_9001_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_9002_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_9003_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_9004_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_9005_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_9006_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_9007_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_9008_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_9009_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_9010_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_9011_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_9012_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_9013_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_9014_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_9015_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Data\Configs\Songs\miku_99999_ini.txt" />
+    <None Include="Assets\MikuAdditive\Res\Fonts\scoreNumber\scoreNumber.fnt" />
+    <None Include="Assets\MikuAdditive\Res\Fonts\stage_num\StageNum.fnt" />
+    <None Include="Assets\MikuAdditive\ThirdPlugins\DOTween\DOTween.XML" />
+    <None Include="Assets\MikuAdditive\ThirdPlugins\DOTween\DOTween43.xml" />
+    <None Include="Assets\MikuAdditive\ThirdPlugins\DOTween\DOTween46.xml" />
+    <None Include="Assets\MikuAdditive\ThirdPlugins\DOTween\DOTween50.xml" />
+    <None Include="Assets\MikuAdditive\ThirdPlugins\DOTween\Editor\DOTweenEditor.XML" />
+    <None Include="Assets\MikuAdditive\ThirdPlugins\DOTween\readme.txt" />
+    <None Include="Assets\MikuAdditive\ThirdPlugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
+    <None Include="Assets\MikuGame\Editor\Tools\ConsolePro\Readme.txt" />
+    <None Include="Assets\MikuGame\Scripts\UI\SoftMask\Resources\Shader\Particle_Add.shader" />
+    <None Include="Assets\MikuGame\Scripts\UI\SoftMask\Resources\Shader\Particle_AddMultiply.shader" />
+    <None Include="Assets\MikuGame\Scripts\UI\SoftMask\Resources\Shader\Particle_AddSmooth.shader" />
+    <None Include="Assets\MikuGame\Scripts\UI\SoftMask\Resources\Shader\Particle_Alpha_Blend.shader" />
+    <None Include="Assets\MikuGame\Scripts\UI\SoftMask\Resources\Shader\Particle_Blend.shader" />
+    <None Include="Assets\MikuGame\Scripts\UI\SoftMask\Resources\Shader\Particle_Multiply.shader" />
+    <None Include="Assets\MikuGame\Scripts\UI\SoftMask\Resources\Shader\Particle_MultiplyDouble.shader" />
+    <None Include="Assets\MikuGame\Scripts\UI\SoftMask\Resources\Shader\Particle_Premultiply_Blend.shader" />
+    <None Include="Assets\MikuGame\Scripts\UI\SoftMask\Resources\Shader\UI-Default.shader" />
+    <None Include="Assets\MikuGame\Scripts\UI\SoftMask\Resources\Shader\UI-Default_Grey.shader" />
+    <None Include="Assets\MikuGame\Scripts\UI\SoftMask\Resources\Shader\UI-Default_transparent_Grey_Soft_Mask.shader" />
+    <None Include="Assets\MikuGame\Scripts\UI\SoftMask\Resources\Shader\UI-Default_transparent_Soft_Mask.shader" />
+    <None Include="Assets\MikuGame\Scripts\UI\SoftMask\Resources\UI-Default_transparent.shader" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\AndroidManifest.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\AndroidManifest.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\build.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\proguard-project.txt" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\anim\com_tencent_msdk_webview_titlebar_hide.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\anim\com_tencent_msdk_webview_titlebar_show.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\anim\com_tencent_msdk_webview_toolbar_hide.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\anim\com_tencent_msdk_webview_toolbar_show.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\anim\msdk_thrdcall_more_dialog_enter.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\anim\msdk_thrdcall_more_dialog_exit.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\drawable\com_tencent_msdk_notice_alert_page_round_top_bkg.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\drawable\com_tencent_msdk_notice_popup_page_round_top_bkg.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\drawable\com_tencent_msdk_notice_popup_round_bottom_bkg.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\drawable\com_tencent_msdk_notice_popup_round_bottom_btn.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\drawable\com_tencent_msdk_notice_popup_round_bottom_pressed.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\drawable\com_tencent_msdk_webview_btn_bg.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\drawable\com_tencent_tmassistant_sdk_negtive_btn.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\drawable\com_tencent_tmassistant_sdk_negtive_btn_pressed.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\drawable\com_tencent_tmassistant_sdk_positive_btn.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\drawable\com_tencent_tmassistant_sdk_positive_btn_pressed.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\drawable\com_tencent_tmassistant_sdk_pregress_button.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\drawable\msdk_ad_first_btn_back_bkg.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\drawable\msdk_ad_second_btn_back_bkg.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\drawable\msdk_ad_third_btn_back_bkg.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\drawable\msdk_name_auth_btn_bg.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\drawable\msdk_name_auth_btn_close.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\drawable\msdk_name_auth_btn_frame_bg.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\drawable\msdk_name_auth_btn_text_color.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\drawable\msdk_name_auth_btn_text_frame_color.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\drawable\msdk_name_auth_checkbox_style.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\drawable\msdk_thrdcall_browser_dialog_btn_cancel_bkg.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\drawable\msdk_thrdcall_delete_fg.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\drawable\msdk_thrdcall_sheet_btn_cancel_bkg.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\layout-land\com_tencent_msdk_notice_image.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\layout-land\com_tencent_msdk_notice_image_url.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\layout-land\com_tencent_msdk_notice_web.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\layout-land\com_tencent_msdk_notice_web_url.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\layout-ldpi\com_tencent_tmassistant_sdk_white_list_dlg.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\layout-port\com_tencent_msdk_notice_image.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\layout-port\com_tencent_msdk_notice_image_url.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\layout-port\com_tencent_msdk_notice_web.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\layout-port\com_tencent_msdk_notice_web_url.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\layout\com_tencent_msdk_notice_roll.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\layout\com_tencent_msdk_notice_text.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\layout\com_tencent_msdk_notice_text_url.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\layout\com_tencent_msdk_qrcode_window.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\layout\com_tencent_msdk_webview_window.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\layout\com_tencent_tmassistant_sdk_white_list_dlg.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\layout\msdk_ad_pause_three_default.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\layout\msdk_ad_pause_three_show.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\layout\msdk_ad_pause_two_default.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\layout\msdk_ad_pause_two_show.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\layout\msdk_ad_stop_three_default.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\layout\msdk_ad_stop_three_show.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\layout\msdk_ad_stop_two_default.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\layout\msdk_ad_stop_two_show.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\layout\msdk_name_auth_dialog.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\layout\msdk_name_auth_main.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\layout\msdk_name_auth_web_dialog.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\layout\msdk_thrdcall_dlg_griditem.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\layout\msdk_thrdcall_dlg_sheet.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\values-hdpi\com_tencent_msdk_dimens.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\values-hdpi\msdk_ad_dimens.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\values-hdpi\msdk_name_auth_dimens.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\values-ldpi\com_tencent_msdk_dimens.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\values-ldpi\com_tencent_tmassistant_sdk_dimens.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\values-ldpi\msdk_ad_dimens.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\values-mdpi\com_tencent_msdk_dimens.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\values-mdpi\msdk_ad_dimens.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\values-xhdpi\com_tencent_msdk_dimens.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\values-xhdpi\msdk_ad_dimens.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\values-xhdpi\msdk_name_auth_dimens.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\values\com_tencent_msdk_colors.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\values\com_tencent_msdk_strings.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\values\com_tencent_msdk_style.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\values\com_tencent_msdk_webview_colors.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\values\com_tencent_msdk_webview_dimens.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\values\com_tencent_msdk_webview_strings.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\values\com_tencent_tmassistant_sdk_dimens.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\values\com_tencent_tmassistant_sdk_strings.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\values\com_tencent_tmassistant_sdk_styles.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\values\msdk_ad_colors.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\values\msdk_ad_dimens.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\values\msdk_ad_strings.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\values\msdk_name_auth_string.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\MSDKLibrary\res\values\msdk_properties.xml" />
+    <None Include="Assets\Msdk\Editor\Librarys\Android3.1\assets\msdk_agreement.txt" />
+    <None Include="Assets\Msdk\Editor\Resources\CallbackSettings.txt" />
+    <None Include="Assets\Msdk\Editor\Resources\CheckResult.txt" />
+    <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\build.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\proguard-project.txt" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\anim\com_tencent_msdk_webview_titlebar_hide.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\anim\com_tencent_msdk_webview_titlebar_show.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\anim\com_tencent_msdk_webview_toolbar_hide.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\anim\com_tencent_msdk_webview_toolbar_show.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\anim\msdk_thrdcall_more_dialog_enter.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\anim\msdk_thrdcall_more_dialog_exit.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\drawable\com_tencent_msdk_notice_alert_page_round_top_bkg.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\drawable\com_tencent_msdk_notice_popup_page_round_top_bkg.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\drawable\com_tencent_msdk_notice_popup_round_bottom_bkg.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\drawable\com_tencent_msdk_notice_popup_round_bottom_btn.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\drawable\com_tencent_msdk_notice_popup_round_bottom_pressed.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\drawable\com_tencent_msdk_webview_btn_bg.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\drawable\com_tencent_tmassistant_sdk_negtive_btn.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\drawable\com_tencent_tmassistant_sdk_negtive_btn_pressed.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\drawable\com_tencent_tmassistant_sdk_positive_btn.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\drawable\com_tencent_tmassistant_sdk_positive_btn_pressed.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\drawable\com_tencent_tmassistant_sdk_pregress_button.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\drawable\msdk_ad_first_btn_back_bkg.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\drawable\msdk_ad_second_btn_back_bkg.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\drawable\msdk_ad_third_btn_back_bkg.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\drawable\msdk_name_auth_btn_bg.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\drawable\msdk_name_auth_btn_close.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\drawable\msdk_name_auth_btn_frame_bg.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\drawable\msdk_name_auth_btn_text_color.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\drawable\msdk_name_auth_btn_text_frame_color.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\drawable\msdk_name_auth_checkbox_style.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\drawable\msdk_thrdcall_browser_dialog_btn_cancel_bkg.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\drawable\msdk_thrdcall_delete_fg.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\drawable\msdk_thrdcall_sheet_btn_cancel_bkg.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\layout-land\com_tencent_msdk_notice_image.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\layout-land\com_tencent_msdk_notice_image_url.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\layout-land\com_tencent_msdk_notice_web.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\layout-land\com_tencent_msdk_notice_web_url.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\layout-ldpi\com_tencent_tmassistant_sdk_white_list_dlg.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\layout-port\com_tencent_msdk_notice_image.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\layout-port\com_tencent_msdk_notice_image_url.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\layout-port\com_tencent_msdk_notice_web.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\layout-port\com_tencent_msdk_notice_web_url.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\layout\com_tencent_msdk_notice_roll.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\layout\com_tencent_msdk_notice_text.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\layout\com_tencent_msdk_notice_text_url.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\layout\com_tencent_msdk_qrcode_window.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\layout\com_tencent_msdk_webview_window.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\layout\com_tencent_tmassistant_sdk_white_list_dlg.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\layout\msdk_ad_pause_three_default.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\layout\msdk_ad_pause_three_show.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\layout\msdk_ad_pause_two_default.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\layout\msdk_ad_pause_two_show.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\layout\msdk_ad_stop_three_default.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\layout\msdk_ad_stop_three_show.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\layout\msdk_ad_stop_two_default.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\layout\msdk_ad_stop_two_show.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\layout\msdk_name_auth_dialog.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\layout\msdk_name_auth_main.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\layout\msdk_name_auth_web_dialog.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\layout\msdk_thrdcall_dlg_griditem.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\layout\msdk_thrdcall_dlg_sheet.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\values-hdpi\com_tencent_msdk_dimens.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\values-hdpi\msdk_ad_dimens.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\values-hdpi\msdk_name_auth_dimens.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\values-ldpi\com_tencent_msdk_dimens.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\values-ldpi\com_tencent_tmassistant_sdk_dimens.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\values-ldpi\msdk_ad_dimens.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\values-mdpi\com_tencent_msdk_dimens.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\values-mdpi\msdk_ad_dimens.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\values-xhdpi\com_tencent_msdk_dimens.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\values-xhdpi\msdk_ad_dimens.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\values-xhdpi\msdk_name_auth_dimens.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\values\com_tencent_msdk_colors.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\values\com_tencent_msdk_strings.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\values\com_tencent_msdk_style.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\values\com_tencent_msdk_webview_colors.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\values\com_tencent_msdk_webview_dimens.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\values\com_tencent_msdk_webview_strings.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\values\com_tencent_tmassistant_sdk_dimens.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\values\com_tencent_tmassistant_sdk_strings.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\values\com_tencent_tmassistant_sdk_styles.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\values\msdk_ad_colors.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\values\msdk_ad_dimens.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\values\msdk_ad_strings.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\values\msdk_name_auth_string.xml" />
+    <None Include="Assets\Plugins\Android\MSDKLibrary\res\values\msdk_properties.xml" />
+    <None Include="Assets\Plugins\Android\MidasPaySDK\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Android\MidasPaySDK\res\anim\unipay_anim_in_from_left.xml" />
+    <None Include="Assets\Plugins\Android\MidasPaySDK\res\anim\unipay_anim_in_from_right.xml" />
+    <None Include="Assets\Plugins\Android\MidasPaySDK\res\anim\unipay_anim_out_to_left.xml" />
+    <None Include="Assets\Plugins\Android\MidasPaySDK\res\anim\unipay_anim_out_to_right.xml" />
+    <None Include="Assets\Plugins\Android\MidasPaySDK\res\layout-land\unipay_layout_activity_web.xml" />
+    <None Include="Assets\Plugins\Android\MidasPaySDK\res\layout-land\unipay_layout_activity_web_x5.xml" />
+    <None Include="Assets\Plugins\Android\MidasPaySDK\res\layout-port\unipay_layout_activity_web.xml" />
+    <None Include="Assets\Plugins\Android\MidasPaySDK\res\layout-port\unipay_layout_activity_web_x5.xml" />
+    <None Include="Assets\Plugins\Android\MidasPaySDK\res\layout\unipay_layout_loadding.xml" />
+    <None Include="Assets\Plugins\Android\MidasPaySDK\res\values\unipay_styles.xml" />
+    <None Include="Assets\Plugins\Android\assets\msdk_agreement.txt" />
+    <None Include="Assets\Plugins\Android\libs\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Android\tapm\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Candlelight\Asset Store Products\HyperText\Documentation\Changelog.txt" />
+    <None Include="Assets\Plugins\Candlelight\Asset Store Products\HyperText\Documentation\Readme.txt" />
+    <None Include="Assets\Plugins\Common\spine\scripts\Editor\Resources\SpineAssetDatabaseMarker.txt" />
+    <None Include="Assets\Plugins\Common\spine\scripts\Modules\CustomMaterials\SkeletonRendererCustomMaterials.txt" />
+    <None Include="Assets\Plugins\Common\spine\scripts\Modules\Ghost\Shaders\Spine-Special-Skeleton-Ghost.shader" />
+    <None Include="Assets\Plugins\Common\spine\scripts\Modules\Shaders\Spine-Skeleton-Fill.shader" />
+    <None Include="Assets\Plugins\Common\spine\scripts\Modules\Shaders\Spine-Skeleton-Tint.shader" />
+    <None Include="Assets\Plugins\Common\spine\scripts\Modules\Shaders\Sprite\CGIncludes\ShaderMaths.cginc" />
+    <None Include="Assets\Plugins\Common\spine\scripts\Modules\Shaders\Sprite\CGIncludes\ShaderShared.cginc" />
+    <None Include="Assets\Plugins\Common\spine\scripts\Modules\Shaders\Sprite\CGIncludes\SpriteLighting.cginc" />
+    <None Include="Assets\Plugins\Common\spine\scripts\Modules\Shaders\Sprite\CGIncludes\SpritePixelLighting.cginc" />
+    <None Include="Assets\Plugins\Common\spine\scripts\Modules\Shaders\Sprite\CGIncludes\SpriteShadows.cginc" />
+    <None Include="Assets\Plugins\Common\spine\scripts\Modules\Shaders\Sprite\CGIncludes\SpriteSpecular.cginc" />
+    <None Include="Assets\Plugins\Common\spine\scripts\Modules\Shaders\Sprite\CGIncludes\SpriteUnlit.cginc" />
+    <None Include="Assets\Plugins\Common\spine\scripts\Modules\Shaders\Sprite\CGIncludes\SpriteVertexLighting.cginc" />
+    <None Include="Assets\Plugins\Common\spine\scripts\Modules\Shaders\Sprite\CameraDepthNormalsTexture.shader" />
+    <None Include="Assets\Plugins\Common\spine\scripts\Modules\Shaders\Sprite\CameraDepthTexture.shader" />
+    <None Include="Assets\Plugins\Common\spine\scripts\Modules\Shaders\Sprite\CameraNormalsTexture.shader" />
+    <None Include="Assets\Plugins\Common\spine\scripts\Modules\Shaders\Sprite\ShaderShared.cginc" />
+    <None Include="Assets\Plugins\Common\spine\scripts\Modules\Shaders\Sprite\SpriteDepthNormalsTexture.shader" />
+    <None Include="Assets\Plugins\Common\spine\scripts\Modules\Shaders\Sprite\SpriteLighting.cginc" />
+    <None Include="Assets\Plugins\Common\spine\scripts\Modules\Shaders\Sprite\SpritePixelLighting.cginc" />
+    <None Include="Assets\Plugins\Common\spine\scripts\Modules\Shaders\Sprite\SpriteShadows.cginc" />
+    <None Include="Assets\Plugins\Common\spine\scripts\Modules\Shaders\Sprite\SpriteUnlit.cginc" />
+    <None Include="Assets\Plugins\Common\spine\scripts\Modules\Shaders\Sprite\SpriteVertexLighting.cginc" />
+    <None Include="Assets\Plugins\Common\spine\scripts\Modules\Shaders\Sprite\SpritesPixelLit.shader" />
+    <None Include="Assets\Plugins\Common\spine\scripts\Modules\Shaders\Sprite\SpritesUnlit.shader" />
+    <None Include="Assets\Plugins\Common\spine\scripts\Modules\Shaders\Sprite\SpritesVertexLit.shader" />
+    <None Include="Assets\Plugins\Common\spine\scripts\Modules\SkeletonGraphic\Shaders\Spine-SkeletonGraphic-TintBlack.shader" />
+    <None Include="Assets\Plugins\Common\spine\scripts\Modules\SkeletonGraphic\Shaders\Spine-SkeletonGraphic.shader" />
+    <None Include="Assets\Plugins\Common\spine\scripts\Modules\SkeletonRenderSeparator\SkeletonRenderSeparator.txt" />
+    <None Include="Assets\Plugins\Common\spine\scripts\Modules\SlotBlendModes\Spine-Skeleton-PMA-Multiply.shader" />
+    <None Include="Assets\Plugins\Common\spine\scripts\Modules\SlotBlendModes\Spine-Skeleton-PMA-Screen.shader" />
+    <None Include="Assets\Plugins\Common\spine\scripts\Shaders\Spine-Skeleton-TintBlack.shader" />
+    <None Include="Assets\Plugins\Common\spine\scripts\Shaders\Spine-Skeleton.shader" />
+    <None Include="Assets\Plugins\Common\spine\scripts\Shaders\Spine-SkeletonLit.shader" />
+    <None Include="Assets\Plugins\Common\spine\scripts\Shaders\Utility\Hidden-Spine-Bones.shader" />
+    <None Include="Assets\Plugins\Common\spine\scripts\Shaders\Utility\HiddenPass.shader" />
+    <None Include="Assets\Plugins\Common\spine\scripts\version.txt" />
+    <None Include="Assets\Res\ReadMe.txt" />
+    <None Include="Assets\StreamingAssets\Vuforia\Miku.xml" />
+    <None Include="Assets\UnityARKitPlugin\ARKitRemote\ARKITREMOTE.txt" />
+    <None Include="Assets\UnityARKitPlugin\Examples\Common\Shaders\InstancedSurfaceShader.shader" />
+    <None Include="Assets\UnityARKitPlugin\Examples\Common\Shaders\MobileARShadow.shader" />
+    <None Include="Assets\UnityARKitPlugin\Examples\Common\Shaders\MobileOcclusion.shader" />
+    <None Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Shaders\YUVShader.shader" />
+    <None Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Shaders\YUVShaderLinear.shader" />
+    <None Include="Assets\Vuforia\Editor\Scripts\Vuforia.UnityExtensions.Editor.XML" />
+    <None Include="Assets\Vuforia\Editor\WebcamProfiles\profiles.xml" />
+    <None Include="Assets\Vuforia\Scripts\Internal\Vuforia.UnityExtensions.XML" />
+    <None Include="Assets\Vuforia\Shaders\BrightTexture.shader" />
+    <None Include="Assets\Vuforia\Shaders\ClippingMask.shader" />
+    <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
+    <None Include="Assets\Vuforia\Shaders\DepthMask.shader" />
+    <None Include="Assets\Vuforia\Shaders\RenderVideoBackground.shader" />
+    <None Include="Assets\Vuforia\Shaders\Text3D.shader" />
+    <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />
+    <None Include="Assets\Vuforia\Shaders\VideoBackground.shader" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+</Project>
